@@ -1,0 +1,15 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+/* Navigation container to position it in the right third */
+.right-nav {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 33.33%; /* Right third */
+    text-align: right;
+    padding: 10px;
+    box-sizing: border-box;
+}
