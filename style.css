@@ -138,10 +138,11 @@ p {
 /*-------------- CONTACT UNTERSEITE --------------*/
 .contact-form {
     max-width: 800px;
-    margin: auto;
+    margin: 50px;
     padding: 20px;
+    padding-left: 0;
     background: #ffffff;
-    border-radius: 5px;
+    border-radius: ;
 }
   
 .contact-form label { /* Eingabefelder */
@@ -213,8 +214,18 @@ p {
     object-fit: cover;
 }
 
+/*-------------- Kochbuch Projekt UNTERSEITE --------------*/
 
-/*--------------Footer--------------*/
+
+
+
+
+/*-------------- Social Media --------------*/
+.social-media {
+    margin-left: 50px;
+}
+
+/*-------------- Footer --------------*/
 .footer {
     background-color: #007BFF;
     position: fixed;
