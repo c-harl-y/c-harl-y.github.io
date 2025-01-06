@@ -1,3 +1,21 @@
+/* Cursor */
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    cursor: none; /* Standard-Cursor ausblenden */
+}
+  
+.cursor {
+    position: absolute;
+    width: 10px; /* Durchmesser des Kreises */
+    height: 10px;
+    background-color: #007BFF; /* Farbe des Punktes */
+    border-radius: 50%; /* Kreisform */
+    pointer-events: none; /* Klicks ignorieren, damit der Cursor nicht blockiert */
+    z-index: 9999; /* Sicherstellen, dass der Punkt immer im Vordergrund ist */
+    transform: translate(-50%, -50%); /* Zentrum des Kreises an die Maus setzen */
+}
 body {
     margin: 0;
     padding: 0;
@@ -13,7 +31,7 @@ body {
     padding: 10px;
     box-sizing: border-box;
     list-style-type: none; /*Punkte gehen weg*/
-    margin-top:10px;
+    margin-top:30px;
 }
 /* Links in der Liste */
 .right-navigation ul a {
@@ -35,7 +53,6 @@ body {
     font-size: 45px;
     font-stretch: semi-expanded;
     text-align: left;
-    margin: 10;
     margin-left: 50px; /* Abstand von linker Seite */
     margin-top:10px;
 }
@@ -99,47 +116,26 @@ body {
 }
 
 /*-------------- ABOUT UNTERSEITE --------------*/
-.h1  {
+h1  {
+    margin-left: 50px;
+    text-decoration: none; /* Remove underline */
     color: #007BFF; 
-    font-size: 30px;
-    font-stretch: semi-expanded;
-    text-align: left;
-    margin: 10;
-    margin-left: 50px; 
-    margin-top:10px;
+    font-size: 45px;  
 }
-.p2 {
-    font-stretch: semi-expanded;
-    right: 0;
-    width: 33.33%; /* Right third */
-    margin-left: 55%;
-    margin-bottom: 50px;
-    text-align: justify; /*Blocksatz*/
+p {
+    margin-left: 50px;
+
 }
+    
 .ich {
-    max-width: 300px; 
+    margin-left: 50px;
+    width: 28%;
     height: auto; 
 }
 
 
 
 /*-------------- CONTACT UNTERSEITE --------------*/
-.h1 {
-    color: #007BFF; 
-    font-size: 30px;
-    font-stretch: semi-expanded;
-    text-align: left;
-    margin: 10;
-    margin-left: 50px; 
-    margin-top:10px;
-}
-
-.p3 {
-    font-stretch: semi-expanded;
-    margin: 50px;
-    
-} 
-
 .contact-form {
     max-width: 800px;
     margin: auto;
@@ -175,57 +171,48 @@ body {
     right: 0;
 }  
 
-/*-------------- Papier Projekt UNTERSEITE --------------*/
-.h1 {
-    color: #007BFF; 
-    font-size: 30px;
-    font-stretch: semi-expanded;
-    text-align: left;
-    margin: 10;
-    margin-left: 50px; 
-    margin-top:10px; 
-}    
-.papierZacken {
-    width: 100px;
-    height: auto;
+/*-------------- Papier Projekt UNTERSEITE --------------*/   
+p {
+    width: 33,33%;
+    text-align: justify;
+    padding-right: 50px;
+    justify-content: flex-end;    
+}
+
+.image-containerPapier {
     margin-left: 50px;
-} 
+    margin-top: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 30px;
+    height: auto;
+    object-fit: cover;
+}
 
 /*-------------- Buch Projekt UNTERSEITE --------------*/
-.offen {
-    margin: 50px; 
-} 
-.rot {
-    margin: 50px; 
-} 
-.gelb {
-    margin: 50px; 
-} 
-.Stapel {
-    margin: 50px; 
-} 
-
-/*-------------- Erdnuss Projekt UNTERSEITE --------------*/
-.image-Container {
-    display: flex; /* Flexbox aktivieren */
-    justify-content: space-between; /* Abstand zwischen den Bildern */
-    gap: 20px; /* Abstand zwischen Bildern */
+.image-containerBuch {
     margin-left: 50px;
-} 
-.Text-Erdnuss {
-    margin-left: 50%;
-    margin-left: 55%;
-    text-align: justify; /*Blocksatz*/
-
-} 
-
-/*--------------Instagram Icon--------------*/
-.social-icon {
-    width: 40px; /* Größe des Icons */
-    height: 40px; /* Höhe des Icons */
-    border-radius: 50%; /* Rundes Symbol */
-    transition: transform 0.3s; /* Animation beim Hover */
+    margin-top: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 30px;
+    height: auto;
+    object-fit: cover;
 }
+/*-------------- Erdnuss Projekt UNTERSEITE --------------*/
+.image-containerErdnuss {
+    margin-left: 50px;
+    margin-top: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    height: auto;
+    object-fit: cover;
+}
+
 
 /*--------------Footer--------------*/
 .footer {
