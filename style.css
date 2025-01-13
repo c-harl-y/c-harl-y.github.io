@@ -1,25 +1,29 @@
-/* Cursor */
-body {
-    margin: 0;
-    padding: 0;
-    height: 100vh;
-    cursor: none; /* Standard-Cursor ausblenden */
-}
-  
-.cursor {
-    position: absolute;
-    width: 10px; /* Durchmesser des Kreises */
-    height: 10px;
-    background-color: #007BFF; /* Farbe des Punktes */
-    border-radius: 50%; /* Kreisform */
-    pointer-events: none; /* Klicks ignorieren, damit der Cursor nicht blockiert */
-    z-index: 9999; /* Sicherstellen, dass der Punkt immer im Vordergrund ist */
-    transform: translate(-50%, -50%); /* Zentrum des Kreises an die Maus setzen */
-}
 body {
     margin: 0;
     padding: 0;
     font-family: interstate-condensed,monospace; 
+   
+
+/* Hintergrundbild */
+    background-image: url('image/Papierstruktur.jpg'); /* Bild-Datei */
+    background-size: cover; /* Bild wird skaliert, um den gesamten Bereich auszufüllen */
+    background-position: center; /* Bild wird zentriert */
+    background-attachment: fixed; /* Bild bleibt beim Scrollen fest */
+
+    cursor: none; /* Cursor wird zu einem Fadenkreuz */
+
+    
+}
+
+.cursor {
+    position: absolute;
+    width: 10px; /* Diameter of the dot */
+    height: 10px;
+    background-color: #007BFF; /* Blue color */
+    border-radius: 50%; /* Make it a circle */
+    pointer-events: none; /* Ignore clicks on the cursor */
+    z-index: 9999; /* Ensure it's above everything */
+    transform: translate(-50%, -50%); /* Center the dot at the mouse position */
 }
 
 /* Navigation */
@@ -122,9 +126,14 @@ h1  {
     color: #007BFF; 
     font-size: 45px;  
 }
-p {
-    margin-left: 50px;
 
+.p {
+    color: #007BFF; /* Neutral color */ 
+    font-size: 45px;
+    font-stretch: semi-expanded;
+    text-align: left;
+    margin-left: 50px; /* Abstand von linker Seite */
+    margin-top:10px;
 }
     
 .ich {
@@ -136,15 +145,24 @@ p {
 
 
 /*-------------- CONTACT UNTERSEITE --------------*/
+.p {
+    color: #007BFF; /* Neutral color */ 
+    font-size: 45px;
+    font-stretch: semi-expanded;
+    text-align: left;
+    margin-left: 50px; /* Abstand von linker Seite */
+    margin-top:10px;
+}
+
 .contact-form {
     max-width: 800px;
     margin: 50px;
     padding: 20px;
     padding-left: 0;
     background: #ffffff;
-    border-radius: ;
+    /* border-radius: ; */
 }
-  
+ 
 .contact-form label { /* Eingabefelder */
     display: block;
     margin-bottom: 8px;
@@ -192,6 +210,15 @@ p {
 }
 
 /*-------------- Buch Projekt UNTERSEITE --------------*/
+.p {
+    color: #007BFF; /* Neutral color */ 
+    font-size: 45px;
+    font-stretch: semi-expanded;
+    text-align: left;
+    margin-left: 50px; /* Abstand von linker Seite */
+    margin-top:10px;
+}
+
 .image-containerBuch {
     margin-left: 50px;
     margin-top: 50px;
@@ -202,7 +229,17 @@ p {
     height: auto;
     object-fit: cover;
 }
+
 /*-------------- Erdnuss Projekt UNTERSEITE --------------*/
+.p {
+    color: #007BFF; /* Neutral color */ 
+    font-size: 45px;
+    font-stretch: semi-expanded;
+    text-align: left;
+    margin-left: 50px; /* Abstand von linker Seite */
+    margin-top:10px;
+}
+
 .image-containerErdnuss {
     margin-left: 50px;
     margin-top: 50px;

@@ -1,12 +1,11 @@
-const cursor = document.querySelector('.cursor'); // Klasse 'cursor' auswählen
+// Erstelle den Punkt-Cursor im DOM
+const cursor = document.createElement('div');
+cursor.classList.add('cursor');
+document.body.appendChild(cursor);
 
+// Bewegung des Punktes mit der Maus
 document.addEventListener('mousemove', (e) => {
-  cursor.style.left = e.clientX + 'px'; // X-Position aktualisieren
-  cursor.style.top = e.clientY + 'px';  // Y-Position aktualisieren
+  cursor.style.left = e.clientX + 'px';
+  cursor.style.top = e.clientY + 'px';
 });
 
-document.addEventListener('mousemove', (e) => {
-    console.log(`X: ${e.clientX}, Y: ${e.clientY}`); // Koordinaten prüfen
-    cursor.style.left = e.clientX + 'px';
-    cursor.style.top = e.clientY + 'px';
-  });
