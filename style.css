@@ -1,7 +1,10 @@
 body {
     margin: 0;
     padding: 0;
+    cursor: url('image/Cursor.png'), auto; /* Cursor */
     font-family: interstate-condensed,monospace; 
+    font-size: 20px;
+    
    
 
 /* Hintergrundbild */
@@ -9,22 +12,22 @@ body {
     background-size: cover; /* Bild wird skaliert, um den gesamten Bereich auszufüllen */
     background-position: center; /* Bild wird zentriert */
     background-attachment: fixed; /* Bild bleibt beim Scrollen fest */
-
-    cursor: none; /* Cursor wird zu einem Fadenkreuz */
-
-    
 }
 
-.cursor {
-    position: absolute;
-    width: 10px; /* Diameter of the dot */
-    height: 10px;
-    background-color: #007BFF; /* Blue color */
-    border-radius: 50%; /* Make it a circle */
-    pointer-events: none; /* Ignore clicks on the cursor */
-    z-index: 9999; /* Ensure it's above everything */
-    transform: translate(-50%, -50%); /* Center the dot at the mouse position */
+a { 
+    cursor: url('image/CursorLink.png') !important; /* Cursor */
 }
+
+/* Alle Überschriften */
+h1{
+    color: #007BFF; /* Neutral color */ 
+    font-size: 45px;
+    text-align: left;
+    font-weight: normal;
+    margin-left: 50px; /* Abstand von linker Seite */
+    margin-top: 50px;
+}
+
 
 /* Navigation */
 .right-navigation ul {
@@ -32,7 +35,6 @@ body {
     right: 0;
     width: 33.33%; /* Right third */
     text-align: left;
-    padding: 10px;
     box-sizing: border-box;
     list-style-type: none; /*Punkte gehen weg*/
     margin-top:30px;
@@ -52,16 +54,14 @@ body {
 }
 
 /* Überschrift */
-.p {
+.CharlotteSchröter {
     color: #007BFF; /* Neutral color */ 
     font-size: 45px;
-    font-stretch: semi-expanded;
-    text-align: left;
-    margin-left: 50px; /* Abstand von linker Seite */
-    margin-top:10px;
+    font-stretch: semi-expanded;   
+    margin-top: 50px;
 }
-  
-.p :hover {
+
+.CharlotteSchröter :hover {
     color: #333; /* Change color on hover */
 }
 
@@ -82,6 +82,7 @@ body {
     height: auto; /* Automatische proportionale Höhe */
     margin: 50px;  
     margin-left: 45%;   
+
 }
 .hover-image2:hover {
     transform: scale(1.1); /* Bild wird größer */
@@ -120,105 +121,65 @@ body {
 }
 
 /*-------------- ABOUT UNTERSEITE --------------*/
-h1  {
-    margin-left: 50px;
-    text-decoration: none; /* Remove underline */
-    color: #007BFF; 
-    font-size: 45px;  
-}
-
-.p {
-    color: #007BFF; /* Neutral color */ 
-    font-size: 45px;
-    font-stretch: semi-expanded;
-    text-align: left;
-    margin-left: 50px; /* Abstand von linker Seite */
-    margin-top:10px;
-}
-    
 .ich {
     margin-left: 50px;
     width: 28%;
     height: auto; 
+    margin-top: 20px;
+ 
 }
+.Unterschrift {
+    margin-left: 70%;
+ 
+}  
 
+h1{
+    margin-top: 20px;
+
+}
+p {
+    position: absolute;
+    left: 35%;
+    right: 10%;
+    margin-top: 20px;
+    text-align: justify;
+}
 
 
 /*-------------- CONTACT UNTERSEITE --------------*/
-.p {
-    color: #007BFF; /* Neutral color */ 
-    font-size: 45px;
-    font-stretch: semi-expanded;
-    text-align: left;
-    margin-left: 50px; /* Abstand von linker Seite */
-    margin-top:10px;
-}
 
-.contact-form {
-    max-width: 800px;
-    margin: 50px;
-    padding: 20px;
-    padding-left: 0;
-    background: #ffffff;
-    /* border-radius: ; */
-}
- 
-.contact-form label { /* Eingabefelder */
-    display: block;
-    margin-bottom: 8px;
-    font-weight: bold;
-    color: #007BFF;
-}
-  
-.contact-form input, 
-.contact-form textarea {
-    width: 100%;
-    padding: 10px;
-    margin-bottom: 15px;
-    border: 0,25px solid black;
-    font-size: 14px;
-}
-  
-.contact-form button { /* Senden-Button */
-    background-color: #007BFF;
-    padding: 10px;
-    width: 100px ;
-    color: white;
-    border: none;
-    border-radius: 4px;
-    font-size: 16px;
-    right: 0;
-}  
 
 /*-------------- Papier Projekt UNTERSEITE --------------*/   
-p {
-    width: 33,33%;
+.PapierIgel {
+    margin: 50px;
+
+}
+
+.textExperimentePapier {
+    font-size: 20px;
+    font-stretch: semi-expanded;
     text-align: justify;
-    padding-right: 50px;
-    justify-content: flex-end;    
+    margin:50px;
+    max-width: 50%;
+    padding-left: 100px;
+    position: absolute;
 }
 
 .image-containerPapier {
-    margin-left: 50px;
-    margin-top: 50px;
-    display: flex;
-    flex-wrap: wrap;
-    grid-template-columns: repeat(1, 1fr);
-    gap: 30px;
-    height: auto;
-    object-fit: cover;
+    display: grid; /* Aktiviert das Grid-Layout */
+    grid-template-columns: repeat(5, 1fr); /* 5 Spalten */
+    gap: 10px; /* Abstand zwischen den Bildern */
+    margin: 50px;
 }
+.image-containerPapier img {
+    width: 100%; /* Bilder nehmen die volle Breite der Zellen ein */
+    height: auto; /* Bildhöhe wird automatisch angepasst */
+    object-fit: cover; /* Sorgt dafür, dass die Bilder das Verhältnis beibehalten und gleichzeitig den Container füllen */
+}
+
+
 
 /*-------------- Buch Projekt UNTERSEITE --------------*/
-.p {
-    color: #007BFF; /* Neutral color */ 
-    font-size: 45px;
-    font-stretch: semi-expanded;
-    text-align: left;
-    margin-left: 50px; /* Abstand von linker Seite */
-    margin-top:10px;
-}
-
 .image-containerBuch {
     margin-left: 50px;
     margin-top: 50px;
@@ -228,18 +189,24 @@ p {
     gap: 30px;
     height: auto;
     object-fit: cover;
+    max-width: max-content;
+    
 }
+
+.textBuchbauen {
+    font-size: 20px;
+    font-stretch: semi-expanded;
+    text-align: justify;
+    margin-top:10px;
+    max-width: 400px;
+    min-width: 300px;
+    margin-right:50px ;
+    left: 80%;
+
+}
+    
 
 /*-------------- Erdnuss Projekt UNTERSEITE --------------*/
-.p {
-    color: #007BFF; /* Neutral color */ 
-    font-size: 45px;
-    font-stretch: semi-expanded;
-    text-align: left;
-    margin-left: 50px; /* Abstand von linker Seite */
-    margin-top:10px;
-}
-
 .image-containerErdnuss {
     margin-left: 50px;
     margin-top: 50px;
@@ -257,18 +224,14 @@ p {
 
 
 
-/*-------------- Social Media --------------*/
-.social-media {
-    margin-left: 50px;
-}
-
 /*-------------- Footer --------------*/
-.footer {
+footer {
+    text-align: right;
     background-color: #007BFF;
-    position: fixed;
-    padding-left: 50px;
-    bottom: 0;
-    width: 100%;
-    text-align: left;
-    margin-top: 50px;
-}
+    height: 50px;
+    font-size: 20px;
+    color: #333;
+    padding: 10px;
+    padding-left: 50px;    
+  }
+
