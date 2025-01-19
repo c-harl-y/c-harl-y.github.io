@@ -65,16 +65,19 @@ h1{
     color: #333; /* Change color on hover */
 }
 
+
 /*--------------Bild Papier--------------*/
 .hover-image1 {
     margin: 50px; /*Positionierung*/
+    margin-bottom: 0;
     width: 28%; /* Größe des Bildes */
     height: auto; /* Automatische proportionale Höhe */
 }
 .hover-image1:hover {
     transform: scale(1.1); /* Bild wird größer */
-    transition: transform .8s cubic-bezier (0.74, 0.05, 0.25, 1); /* Weiche Übergänge für Effekte */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
+
 
 /*--------------Bild Buch--------------*/
 .hover-image2 {
@@ -82,11 +85,13 @@ h1{
     height: auto; /* Automatische proportionale Höhe */
     margin: 50px;  
     margin-left: 45%;   
+    margin-bottom: 0;
+    margin-top: 0;
 
 }
 .hover-image2:hover {
     transform: scale(1.1); /* Bild wird größer */
-    transition: transform .8s cubic-bezier (0.74, 0.05, 0.25, 1); /* Weiche Übergänge für Effekte */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 /*--------------Bild Erdnuss--------------*/
@@ -95,14 +100,14 @@ h1{
     height: auto; /* Automatische proportionale Höhe */
     display: block;
     margin-top: 50px;
-    margin-bottom: 50px;
+    margin-bottom: 0;
     margin-left: auto;
     margin-right: auto;  
 }   
 
 .hover-image3:hover {
     transform: scale(1.1); /* Bild wird größer */
-    transition: transform .8s cubic-bezier (0.74, 0.05, 0.25, 1); /* Weiche Übergänge für Effekte */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 /*--------------Bild Kochbuch--------------*/
@@ -110,16 +115,16 @@ h1{
     width: 45%;
     height: auto; /* Automatische proportionale Höhe */
     margin-top: 50px ;
-    margin-bottom: 50px;
+    margin-bottom: 0;
     margin-left: 50%;
    
 }   
 
 .hover-image4:hover {
     transform: scale(1.1); /* Bild wird größer */
-    transition: transform .8s cubic-bezier (0.74, 0.05, 0.25, 1); /* Weiche Übergänge für Effekte */
-}
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 
+}
 /*-------------- ABOUT UNTERSEITE --------------*/
 .ich {
     margin-left: 50px;
@@ -147,12 +152,39 @@ p {
 
 
 /*-------------- CONTACT UNTERSEITE --------------*/
+.contact {
+   margin-left: 50px;
+   text-align: left;
+   margin-top: 50px;
+}
+
+.instagram{
+    display: inline-block;
+    width: 60px;               /* Breite des Buttons */
+    height: 60px;              /* Höhe des Buttons */
+    background-color: #007BFF; 
+    color: white;              /* Weiße Schriftfarbe */
+    text-align: center;        /* Text zentrieren */
+    line-height: 60px;         /* Vertikale Zentrierung des Textes */
+    border-radius: 50%;        /* Macht den Button rund (Kreis) */
+    font-size: 20px;           /* Schriftgröße */
+    text-decoration: none;     /* Entfernt den Link-Unterstrich */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Schattierung */
+    transition: background-color 0.3s, transform 0.3s; /* Übergangseffekte */
+    margin-top: 50px;
+    margin-left: 50px;
+}
+
+/* Hover-Effekt: Veränderung der Hintergrundfarbe und Vergrößerung */
+.instagram:hover {
+    background-color: white; /* Added missing semicolon */
+    transform: scale(1.1);      /* Button vergrößern */
+}
 
 
 /*-------------- Papier Projekt UNTERSEITE --------------*/   
 .PapierIgel {
     margin: 50px;
-
 }
 
 .textExperimentePapier {
@@ -161,7 +193,7 @@ p {
     text-align: justify;
     margin:50px;
     max-width: 50%;
-    padding-left: 100px;
+    padding-left: 50px;
     position: absolute;
 }
 
@@ -170,11 +202,35 @@ p {
     grid-template-columns: repeat(5, 1fr); /* 5 Spalten */
     gap: 10px; /* Abstand zwischen den Bildern */
     margin: 50px;
+
 }
 .image-containerPapier img {
     width: 100%; /* Bilder nehmen die volle Breite der Zellen ein */
     height: auto; /* Bildhöhe wird automatisch angepasst */
     object-fit: cover; /* Sorgt dafür, dass die Bilder das Verhältnis beibehalten und gleichzeitig den Container füllen */
+}
+
+.circle-button3 {
+    display: inline-block;
+    width: 60px;               /* Breite des Buttons */
+    height: 60px;              /* Höhe des Buttons */
+    background-color: #007BFF; 
+    color: white;              /* Weiße Schriftfarbe */
+    text-align: center;        /* Text zentrieren */
+    line-height: 60px;         /* Vertikale Zentrierung des Textes */
+    border-radius: 50%;        /* Macht den Button rund (Kreis) */
+    font-size: 20px;           /* Schriftgröße */
+    text-decoration: none;     /* Entfernt den Link-Unterstrich */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Schattierung */
+    transition: background-color 0.3s, transform 0.3s; /* Übergangseffekte */
+    margin-top: 50px;
+    margin-left: 50px;
+}
+
+/* Hover-Effekt: Veränderung der Hintergrundfarbe und Vergrößerung */
+.circle-button3:hover {
+    background-color: black; /* Added missing semicolon */
+    transform: scale(1.1);      /* Button vergrößern */
 }
 
 
@@ -189,8 +245,7 @@ p {
     gap: 30px;
     height: auto;
     object-fit: cover;
-    max-width: max-content;
-    
+    max-width: max-content;    
 }
 
 .textBuchbauen {
@@ -202,36 +257,140 @@ p {
     min-width: 300px;
     margin-right:50px ;
     left: 80%;
-
 }
+
+.circle-button {
+    display: inline-block;
+    width: 60px;               /* Breite des Buttons */
+    height: 60px;              /* Höhe des Buttons */
+    background-color: #007BFF; 
+    color: white;              /* Weiße Schriftfarbe */
+    text-align: center;        /* Text zentrieren */
+    line-height: 60px;         /* Vertikale Zentrierung des Textes */
+    border-radius: 50%;        /* Macht den Button rund (Kreis) */
+    font-size: 20px;           /* Schriftgröße */
+    text-decoration: none;     /* Entfernt den Link-Unterstrich */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Schattierung */
+    transition: background-color 0.3s, transform 0.3s; /* Übergangseffekte */
+    margin-top: 50px;
+    margin-left: 50px;
+}
+
+/* Hover-Effekt: Veränderung der Hintergrundfarbe und Vergrößerung */
+.circle-button:hover {
+    background-color: rgb(218, 29, 29); /* Added missing semicolon */
+    transform: scale(1.1);      /* Button vergrößern */
+}
+
     
 
 /*-------------- Erdnuss Projekt UNTERSEITE --------------*/
+.TextErdnuss {
+    font-size: 20px;
+    font-stretch: semi-expanded;
+    text-align: justify;
+    margin:50px;  
+}
+
 .image-containerErdnuss {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* 4 Bilder nebeneinander */
+    gap: 20px; /* Abstand zwischen den Bildern */
+    margin: 50px;   
+    margin-top: 50px;
+}
+
+.image-containerErdnuss img {
+    
+    width: 100%; /* Bilder nehmen die volle Breite der Zellen ein */
+    height: auto; /* Bildhöhe wird automatisch angepasst */
+    object-fit: cover; /* Sorgt dafür, dass die Bilder das Verhältnis beibehalten und gleichzeitig den Container füllen */
+}
+
+.circle-button2 {
+    display: inline-block;
+    width: 60px;               /* Breite des Buttons */
+    height: 60px;              /* Höhe des Buttons */
+    background-color: #007BFF; 
+    color: white;              /* Weiße Schriftfarbe */
+    text-align: center;        /* Text zentrieren */
+    line-height: 60px;         /* Vertikale Zentrierung des Textes */
+    border-radius: 50%;        /* Macht den Button rund (Kreis) */
+    font-size: 20px;           /* Schriftgröße */
+    text-decoration: none;     /* Entfernt den Link-Unterstrich */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Schattierung */
+    transition: background-color 0.3s, transform 0.3s; /* Übergangseffekte */
+    margin-top: 50px;
+    margin-left: 50px;
+}
+
+/* Hover-Effekt: Veränderung der Hintergrundfarbe und Vergrößerung */
+.circle-button2:hover {
+    background-color: grey; /* Added missing semicolon */
+    transform: scale(1.1);      /* Button vergrößern */
+}
+
+/*-------------- Kochbuch Projekt UNTERSEITE --------------*/
+.image-containerKochbuch {
     margin-left: 50px;
     margin-top: 50px;
     display: flex;
     flex-wrap: wrap;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(1, 1fr);
     gap: 30px;
     height: auto;
     object-fit: cover;
+    max-width: max-content;
 }
 
-/*-------------- Kochbuch Projekt UNTERSEITE --------------*/
+.TextKochbuch {
+    font-size: 20px;
+    font-stretch: semi-expanded;
+    text-align: justify;
+    margin-top:10px;
+    max-width: 400px;
+    min-width: 300px;
+    margin-right:50px ;
+    left: 80%;  
+}
 
+.circle-button4 {
+    display: inline-block;
+    width: 60px;               /* Breite des Buttons */
+    height: 60px;              /* Höhe des Buttons */
+    background-color: #007BFF; 
+    color: white;              /* Weiße Schriftfarbe */
+    text-align: center;        /* Text zentrieren */
+    line-height: 60px;         /* Vertikale Zentrierung des Textes */
+    border-radius: 50%;        /* Macht den Button rund (Kreis) */
+    font-size: 20px;           /* Schriftgröße */
+    text-decoration: none;     /* Entfernt den Link-Unterstrich */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Schattierung */
+    transition: background-color 0.3s, transform 0.3s; /* Übergangseffekte */
+    margin-top: 50px;
+    margin-left: 50px;
+}
 
-
+/* Hover-Effekt: Veränderung der Hintergrundfarbe und Vergrößerung */
+.circle-button4:hover {
+    background-color: #273c7a; /* Added missing semicolon */
+    transform: scale(1.1);      /* Button vergrößern */
+}
 
 
 /*-------------- Footer --------------*/
 footer {
-    text-align: right;
     background-color: #007BFF;
     height: 50px;
     font-size: 20px;
     color: #333;
     padding: 10px;
     padding-left: 50px;    
+    text-align: left;
+    display: flex;   
+    bottom: 0;
+    margin-top: 100px;
+    
+    
   }
 
