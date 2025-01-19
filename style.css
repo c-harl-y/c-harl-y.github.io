@@ -123,8 +123,8 @@ h1{
 .hover-image4:hover {
     transform: scale(1.1); /* Bild wird größer */
     transition: transform 0.3s ease, box-shadow 0.3s ease;
-
 }
+    
 /*-------------- ABOUT UNTERSEITE --------------*/
 .ich {
     margin-left: 50px;
@@ -175,7 +175,6 @@ p {
     margin-left: 50px;
 }
 
-/* Hover-Effekt: Veränderung der Hintergrundfarbe und Vergrößerung */
 .instagram:hover {
     background-color: white; /* Added missing semicolon */
     transform: scale(1.1);      /* Button vergrößern */
@@ -276,7 +275,6 @@ p {
     margin-left: 50px;
 }
 
-/* Hover-Effekt: Veränderung der Hintergrundfarbe und Vergrößerung */
 .circle-button:hover {
     background-color: rgb(218, 29, 29); /* Added missing semicolon */
     transform: scale(1.1);      /* Button vergrößern */
@@ -312,7 +310,7 @@ p {
     width: 60px;               /* Breite des Buttons */
     height: 60px;              /* Höhe des Buttons */
     background-color: #007BFF; 
-    color: white;              /* Weiße Schriftfarbe */
+    color: white;            /* Weiße Schriftfarbe */
     text-align: center;        /* Text zentrieren */
     line-height: 60px;         /* Vertikale Zentrierung des Textes */
     border-radius: 50%;        /* Macht den Button rund (Kreis) */
