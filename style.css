@@ -135,13 +135,12 @@ h1{
 }
 .Unterschrift {
     margin-left: 70%;
- 
 }  
 
 h1{
     margin-top: 20px;
-
 }
+
 p {
     position: absolute;
     left: 35%;
@@ -150,15 +149,7 @@ p {
     text-align: justify;
 }
 
-
-/*-------------- CONTACT UNTERSEITE --------------*/
-.contact {
-   margin-left: 50px;
-   text-align: left;
-   margin-top: 50px;
-}
-
-.instagram{
+.circle-button5 {
     display: inline-block;
     width: 60px;               /* Breite des Buttons */
     height: 60px;              /* Höhe des Buttons */
@@ -175,8 +166,53 @@ p {
     margin-left: 50px;
 }
 
+/* Hover-Effekt: Veränderung der Hintergrundfarbe und Vergrößerung */
+.circle-button5:hover {
+    background-color: grey; /* Added missing semicolon */
+    transform: scale(1.1);      /* Button vergrößern */
+}
+
+/*-------------- CONTACT UNTERSEITE --------------*/
+.contact {
+   margin-left: 50px;
+   text-align: left;
+   margin-top: 50px;
+}
+
+.instagram {
+   font-size: 50px;
+   text-decoration: none;
+   font-weight: 900;
+   color: #007BFF;
+   display: inline-block;
+   margin-bottom: 10px;
+}
+
 .instagram:hover {
-    background-color: white; /* Added missing semicolon */
+    color: #FF69B4;           /* Change color on hover */
+    transform: scale(1.5);      /* Button vergrößern */  
+}
+
+.circle-button6 {
+    display: inline-block;
+    width: 60px;               /* Breite des Buttons */
+    height: 60px;              /* Höhe des Buttons */
+    background-color: #007BFF; 
+    color: white;            /* Weiße Schriftfarbe */
+    text-align: center;        /* Text zentrieren */
+    line-height: 60px;         /* Vertikale Zentrierung des Textes */
+    border-radius: 50%;        /* Macht den Button rund (Kreis) */
+    font-size: 20px;           /* Schriftgröße */
+    text-decoration: none;     /* Entfernt den Link-Unterstrich */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Schattierung */
+    transition: background-color 0.3s, transform 0.3s; /* Übergangseffekte */  
+    align-items: flex-start;
+    margin-bottom: 210px;
+}
+
+/* Hover-Effekt: Veränderung der Hintergrundfarbe und Vergrößerung */
+.circle-button6:hover {
+    background-color: #FF69B4;
     transform: scale(1.1);      /* Button vergrößern */
 }
 
@@ -201,8 +237,8 @@ p {
     grid-template-columns: repeat(5, 1fr); /* 5 Spalten */
     gap: 10px; /* Abstand zwischen den Bildern */
     margin: 50px;
-
 }
+
 .image-containerPapier img {
     width: 100%; /* Bilder nehmen die volle Breite der Zellen ein */
     height: auto; /* Bildhöhe wird automatisch angepasst */
@@ -263,7 +299,7 @@ p {
     width: 60px;               /* Breite des Buttons */
     height: 60px;              /* Höhe des Buttons */
     background-color: #007BFF; 
-    color: white;              /* Weiße Schriftfarbe */
+    color: white;            /* Weiße Schriftfarbe */
     text-align: center;        /* Text zentrieren */
     line-height: 60px;         /* Vertikale Zentrierung des Textes */
     border-radius: 50%;        /* Macht den Button rund (Kreis) */
@@ -284,25 +320,31 @@ p {
 
 /*-------------- Erdnuss Projekt UNTERSEITE --------------*/
 .TextErdnuss {
+    all: unset;
     font-size: 20px;
     font-stretch: semi-expanded;
     text-align: justify;
-    margin:50px;  
+    margin-top:10px;
+    margin-right:50px;
+    margin-left: 50px;
+    margin-bottom: 50px;
+    display: block;
 }
 
 .image-containerErdnuss {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr); /* 4 Bilder nebeneinander */
-    gap: 20px; /* Abstand zwischen den Bildern */
-    margin: 50px;   
-    margin-top: 50px;
+    display: grid; /* Aktiviert das Grid-Layout */
+    grid-template-columns: repeat(4, 3fr); /* 5 Spalten */
+    gap: 10px; /* Abstand zwischen den Bildern */
+    column-gap: 10px;
+    margin-left: 50px;  
+    margin-right: 50px;
 }
 
 .image-containerErdnuss img {
-    
     width: 100%; /* Bilder nehmen die volle Breite der Zellen ein */
     height: auto; /* Bildhöhe wird automatisch angepasst */
     object-fit: cover; /* Sorgt dafür, dass die Bilder das Verhältnis beibehalten und gleichzeitig den Container füllen */
+
 }
 
 .circle-button2 {
@@ -375,20 +417,61 @@ p {
     transform: scale(1.1);      /* Button vergrößern */
 }
 
+/*-------------- IMPRESSUM UNTERSEITE --------------*/
+
+.Impressum {
+    color: black;
+    text-decoration: none;
+}
+.Impressum:hover {
+    color: white;           /* Change color on hover */
+    transform: scale(1.1);      /* Button vergrößern */  
+}
+
+.rechtlicheInhalte {
+    font-size: 20px;
+    font-stretch: semi-expanded;
+    text-align: justify;
+   
+}
+
+.circle-button7 {
+    display: inline-block;
+    width: 60px;               /* Breite des Buttons */
+    height: 60px;              /* Höhe des Buttons */
+    background-color: #007BFF; 
+    color: white;              /* Weiße Schriftfarbe */
+    text-align: center;        /* Text zentrieren */
+    line-height: 60px;         /* Vertikale Zentrierung des Textes */
+    border-radius: 50%;        /* Macht den Button rund (Kreis) */
+    font-size: 20px;           /* Schriftgröße */
+    text-decoration: none;     /* Entfernt den Link-Unterstrich */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Schattierung */
+    transition: background-color 0.3s, transform 0.3s; /* Übergangseffekte */
+    margin-top: 30px;
+    margin-left: 50px;  
+}
+
+/* Hover-Effekt: Veränderung der Hintergrundfarbe und Vergrößerung */
+.circle-button7:hover {
+    background-color: #273c7a; /* Added missing semicolon */
+    transform: scale(1.1);      /* Button vergrößern */
+}
+
+
 
 /*-------------- Footer --------------*/
 footer {
     background-color: #007BFF;
     height: 50px;
     font-size: 20px;
-    color: #333;
+    color: black;
     padding: 10px;
     padding-left: 50px;    
     text-align: left;
     display: flex;   
     bottom: 0;
-    margin-top: 100px;
-    
+    margin-top: 100px; 
     
   }
 
